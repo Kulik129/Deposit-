@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wallet-project:
+    image: postgres:13.3
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=12345678
+      - POSTGRES_DB=wallet
+    ports:
+      - '5433:5432'
